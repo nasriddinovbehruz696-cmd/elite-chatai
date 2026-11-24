@@ -1,0 +1,16 @@
+{
+  "name": "elite-chatai",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=gemini-chat-client",
+    "start": "npm run start --workspace=gemini-chat-server"
+  }
+}
